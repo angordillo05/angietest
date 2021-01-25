@@ -24,7 +24,15 @@ var pintarObjetos = function(){
         tr = table.insertRow(-1);
         for (var j = 0; j < col.length; j++) {
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = myBooks[i][col[j]];
+            
+            if( j==3 ){
+                tabCell.innerHTML = '<img src='+ myBooks[i][col[j]] +'>';
+            }
+            else{
+                tabCell.innerHTML = myBooks[i][col[j]];
+
+            }
+            
         }
         var botonCell = tr.insertCell(-1);
         botonCell.innerHTML = '<button class="btn btn-block btn-primary" onclick="agregarCarrito('+ i +')">Comprar</button>';
@@ -35,4 +43,4 @@ var pintarObjetos = function(){
 };
 var agregarCarrito = function(idx){
     carro.leerDatosProducto(myBooks[idx]);
-};  
+}; 
