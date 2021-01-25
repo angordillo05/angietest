@@ -41,6 +41,7 @@ class Carrito {
                 <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
             </td>
         `;
+        
         listaProductos.appendChild(row);
         this.guardarProductosLocalStorage(producto);
 

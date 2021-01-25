@@ -32,6 +32,10 @@ var pintarObjetos = function(){
                 tabCell.innerHTML = myBooks[i][col[j]];
 
             }
+            if (j==2){
+                console.log = ( myBooks[i][col[j]])
+
+            }
             
         }
         var botonCell = tr.insertCell(-1);
