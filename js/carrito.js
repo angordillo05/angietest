@@ -1,17 +1,10 @@
-class Carrito {
-    comprarProducto(e){
-        e.preventDefault();
-        if(e.target.classList.contains('agregar-carrito')){
-            const producto = e.target.parentElement.parentElement;
-            this.leerDatosProducto(producto);
-        }
-    }
+class Carrito {    
     leerDatosProducto(producto){
         const infoProducto = {
-            imagen : producto.querySelector('img').src,
-            titulo: producto.querySelector('h4').textContent,
-            precio: producto.querySelector('.precio span').textContent,
-            id: producto.querySelector('a').getAttribute('data-id'),
+            imagen : producto.imagen,
+            titulo: producto.name,
+            precio: producto.unit_price,
+            id: producto.id,
             cantidad: 1
         }
         let productosLS;
