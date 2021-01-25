@@ -14,4 +14,4 @@ function cargarEventos(){
     document.addEventListener('DOMContentLoaded', carro.leerLocalStorage());
     procesarPedidoBtn.addEventListener('click', (e)=>{carro.procesarPedido(e)});
 }
-
+document.write("las propiedades de la lista de productos son : " + JSON.stringify(listaProductos));

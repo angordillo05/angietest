@@ -45,35 +45,35 @@
         </div>
     </header>
     <main>
-        <div class="container"><!--si-->
-            <div class="row mt-3"><!--si-->
-                <div class="col"><!--si-->
-                    <h2 class="d-flex justify-content-center mb-3">Finaliza tu compra</h2><!--si-->
-                    <form id="procesar-pago" action="#" method="post"><!--si-->
-                        <div class="form-group row"><!--si-->
-                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre del Cliente :</label><!--si-->
-                            <div class="col-12 col-md-10"><!--si-->
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Finaliza tu compra</h2>
+                    <form id="procesar-pago" action="#" method="post">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre del Cliente :</label>
+                            <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa el  nombre " name="destinatario"><!--si-->
-                            </div><!--si-->
-                        </div><!--si-->
-                        <div class="form-group row"><!--si-->
+                                    placeholder="Ingresa el  nombre " name="destinatario">
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo del cliente :</label><!--si-->
-                            <div class="col-12 col-md-10"><!--si-->
+                            <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="correo" placeholder="Ingresa un correo" name="cc_to">
-                            </div><!--si-->
-                        <!--si--></div>
+                            </div>
+                        </div>
 
-                        <div id="carrito" class="form-group table-responsive" ><!--si-->
-                            <table class="table" id="lista-compra" ><!--si-->
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="table" id="lista-compra" >
                                 <thead>
                                     <tr>
-                                        <th scope="col">Producto</th><!--si-->
-                                        <th scope="col">Nombre</th><!--si-->
-                                        <th scope="col">Precio</th><!--si-->
-                                        <th scope="col">Cantidad</th><!--si-->
-                                        <th scope="col">Sub Total</th><!--si-->
-                                        <th scope="col">Eliminar</th><!--si-->
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
                                     </tr>
 
                                 </thead>
@@ -85,21 +85,19 @@
                                     <th scope="col">
                                         <p id="subtotal"></p>
                                     </th>
-                                    <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">IGV :</th>
                                     <th scope="col">
                                         <p id="igv"></p>
                                     </th>
-                                    <!-- <th scope="col"></th> -->
+                                    
                                 </tr>
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">TOTAL :</th>
                                     <th scope="col">
                                         <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
                                     </th>
-                                    <!-- <th scope="col"></th> -->
                                 </tr>
 
                             </table>
@@ -224,7 +222,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>
-<script src="./tienda.js"></script>
 </body>
 
 </html>
