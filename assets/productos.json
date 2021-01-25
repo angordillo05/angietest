@@ -12,21 +12,21 @@
             "name": "rice",
             "unit_price": 2000,
             "stock": 0,
-            "imagen":"img/9.jpg",
+            "imagen":"img/8.jpg",
             "id" : 2
         },
         {
             "name": "papitas de limón margarita",
             "unit_price": 1500,
             "stock": 1,
-            "imagen":"img/9.jpg",
+            "imagen":"img/7.jpg",
             "id" : 3
         },
         {
             "name": "meat / pound",
             "unit_price": 500,
             "stock": 8,
-            "imagen":"img/9.jpg",
+            "imagen":"img/6.jpg",
             "id" : 4
         }
     ]
