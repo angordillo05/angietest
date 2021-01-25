@@ -11,7 +11,7 @@
         {
             "name": "rice",
             "unit_price": 2000,
-            "stock": 0,
+            "stock": 1,
             "imagen":"img/8.jpg",
             "id" : 2
         },

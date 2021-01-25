@@ -5,6 +5,7 @@ class Carrito {
             titulo: producto.name,
             precio: producto.unit_price,
             id: producto.id,
+            stock:producto.stock,
             cantidad: 1
         }
         let productosLS;
@@ -14,6 +15,15 @@ class Carrito {
                 productosLS = productoLS.id;
             }
         });
+        if(infoProducto.stock ===0 ){
+            Swal.fire({
+                type: 'info',
+                title: 'Error',
+                text: 'El producto no esta disponible',
+                showConfirmButton: false,
+                timer: 1000
+            })
+        }
 
         if(productosLS === infoProducto.id){
             Swal.fire({
@@ -41,7 +51,7 @@ class Carrito {
                 <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
             </td>
         `;
-        
+
         listaProductos.appendChild(row);
         this.guardarProductosLocalStorage(producto);
 
